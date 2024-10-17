@@ -12,7 +12,7 @@ test('senha obrigatória', async ({ page }) => {
 
 test('usuário não existe', async ({ page }) => {
   await login(page,'teste', 'teste')
-  await toast(page, 'ERRO ERRO Oops! Credenciais inválidas :(')
+  await toast(page, 'Oops! Credenciais inválidas :(')
 })
 
 test('senha incorreta', async ({ page }) => {
